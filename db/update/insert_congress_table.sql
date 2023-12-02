@@ -1,0 +1,22 @@
+INSERT INTO congress (person_name, district_name, state_name, term_start_date, term_end_date, party, position)
+VALUES
+    ('Visclosky, Pete', 'IN1', 'Indiana', MAKE_DATE(1985, 1, 1), MAKE_DATE(2021, 12, 31), 'Democrat', 'Representative'),
+    ('Mrvan, Frank', 'IN1', 'Indiana', MAKE_DATE(2021, 1, 1), MAKE_DATE(2024, 12, 31), 'Democrat', 'Representative'),
+    ('Walorski, Jackie', 'IN2', 'Indiana', MAKE_DATE(2013, 1, 1), MAKE_DATE(2022, 12, 31), 'Republican', 'Representative'),
+    ('Yakym, Rudy', 'IN2', 'Indiana', MAKE_DATE(2022, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Stutzman, Marlin', 'IN3', 'Indiana', MAKE_DATE(2010, 1, 1), MAKE_DATE(2016, 12, 31), 'Republican', 'Representative'),
+    ('Banks, Jim', 'IN3', 'Indiana', MAKE_DATE(2017, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Rokita, Todd', 'IN4', 'Indiana', MAKE_DATE(2011, 1, 1), MAKE_DATE(2018, 12, 31), 'Republican', 'Representative'),
+    ('Baird, James', 'IN4', 'Indiana', MAKE_DATE(2019, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Brooks, Susan', 'IN5', 'Indiana', MAKE_DATE(2013, 1, 1), MAKE_DATE(2020, 12, 31), 'Republican', 'Representative'),
+    ('Spartz, Victoria', 'IN5', 'Indiana', MAKE_DATE(2021, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Messer, Luke', 'IN6', 'Indiana', MAKE_DATE(2013, 1, 1), MAKE_DATE(2018, 12, 31), 'Republican', 'Representative'),
+    ('Pence, Greg', 'IN6', 'Indiana', MAKE_DATE(2019, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Carson, André', 'IN7', 'Indiana', MAKE_DATE(2008, 1, 1), MAKE_DATE(2024, 12, 31), 'Democrat', 'Representative'),
+    ('Buschon, Larry', 'IN8', 'Indiana', MAKE_DATE(2011, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Hollingsworth, Trey', 'IN9', 'Indiana', MAKE_DATE(2017, 1, 1), MAKE_DATE(2022, 12, 31), 'Republican', 'Representative'),
+    ('Houchin, Erin', 'IN9', 'Indiana', MAKE_DATE(2023, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Representative'),
+    ('Coats, Daniel', 'SEN', 'Indiana', MAKE_DATE(2011, 1, 1), MAKE_DATE(2016, 12, 31), 'Republican', 'Senator'),
+    ('Donnelly, Joe', 'SEN', 'Indiana', MAKE_DATE(2013, 1, 1), MAKE_DATE(2022, 12, 31), 'Democrat', 'Senator'),
+    ('Young, Todd', 'SEN', 'Indiana', MAKE_DATE(2017, 1, 1), MAKE_DATE(2028, 12, 31), 'Republican', 'Senator'),
+    ('Braun, Mike', 'SEN', 'Indiana', MAKE_DATE(2019, 1, 1), MAKE_DATE(2024, 12, 31), 'Republican', 'Senator');
