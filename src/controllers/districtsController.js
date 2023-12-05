@@ -1,14 +1,51 @@
-// districtsController.js
-const Districts = require('../models/Districts'); // Import your District model
+// controllers/districtsController.js
+const District = require('../models/District'); // Import your District model
+const { Op } = require('sequelize');
 
 module.exports = {
-    getAllDistricts: async (req, res) => {
+    getAllDistricts: async () => {
         try {
-            const districts = await Districts.find(); // Retrieve districts from the database
-            res.status(200).json(districts);
+            const districts = await District.findAll(); // Use findAll() to get all districts
+            return districts;
         } catch (err) {
-            res.status(500).json({ error: err.message });
+            throw new Error(err.message);
         }
     },
-    // Other controller methods for handling districts
+    getDistrictByName: async (districtName) => {
+        try {
+            const district = await District.findOne({
+                where: {
+                    district_name: districtName,
+                },
+            });
+
+            if (!district) {
+                throw new Error('District not found');
+            }
+
+            return district;
+        } catch (err) {
+            throw new Error(err.message);
+        }
+    },
+
+    getDistrictByCongressId: async (congressId) => {
+        try {
+            const district = await District.findOne({
+                where: {
+                    congress_ids: { [Op.contains]: [congressId] },
+                },
+            });
+
+            if (!district) {
+                throw new Error('District not found');
+            }
+
+            return district;
+        } catch (err) {
+            throw new Error(err.message);
+        }
+    },
+
+    // Other controller methods for handling districts...
 };
