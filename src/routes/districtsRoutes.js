@@ -16,8 +16,8 @@ router.get('/districts', async (req, res) => {
 });
 
 // Route to get a district by name
-router.get('/districts/:name', async (req, res) => {
-    const districtName = req.params.name;
+router.get('/d/:dname', async (req, res) => {
+    const districtName = req.params.dname;
 
     try {
         const district = await districtsController.getDistrictByName(districtName);

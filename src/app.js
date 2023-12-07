@@ -5,12 +5,13 @@ const port = process.env.PORT;
 
 // Import routes
 const districtsRoutes = require('./routes/districtsRoutes');
+const congressRoutes = require('./routes/congressRoutes');
 // const congressRoutes = require('./routes/congressRoutes');
 // const billsRoutes = require('./routes/billsRoutes');
 
 // Use routes
 app.use('/api', districtsRoutes); // e.g., '/api/districts'
-// app.use('/api', congressRoutes); // e.g., '/api/congress'
+app.use('/api', congressRoutes); // e.g., '/api/congress'
 // app.use('/api', billsRoutes);    // e.g., '/api/bills'
 
 app.get('/', (req, res) => {
