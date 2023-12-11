@@ -1,5 +1,5 @@
-// controllers/districtsController.js
-const Congress = require('../models/Congress'); // Import your District model
+// controllers/congressController.js
+const Congress = require('../models/Congress');
 
 module.exports = {
     getAllCongressMembers: async () => {
@@ -81,6 +81,4 @@ module.exports = {
         }
     },
 
-    
-    // Other controller methods for handling districts...
 };

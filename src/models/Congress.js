@@ -1,4 +1,4 @@
-// models/District.js
+// models/Congress.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/connection'); // Import your Sequelize instance
 
@@ -30,8 +30,8 @@ const Congress = sequelize.define('Congress', {
         type: DataTypes.STRING(50),
         allowNull: false,
     },
-    state_name: {
-        type: DataTypes.STRING(50),
+    position: {
+        type: DataTypes.ENUM(['Senator', 'Representative']),
         allowNull: false,
     },
 }, {
