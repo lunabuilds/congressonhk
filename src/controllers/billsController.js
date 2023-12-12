@@ -57,5 +57,5 @@ module.exports = {
         }
     }
 
-    // Other controller methods for handling districts...
+    // Other controller methods for handling bills...
 };
